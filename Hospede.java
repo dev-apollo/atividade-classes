@@ -12,6 +12,7 @@ public class Hospede extends Pessoa{
         this.documento = documento;
         this.reservas = new ArrayList<>();
     }
+    
     public void addReserva(Reserva reserva){
         if(!reservas.contains(reserva)){
             reservas.add(reserva);

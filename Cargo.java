@@ -4,4 +4,8 @@ public class Cargo {
     public Cargo(String nome){
         this.nome = nome;
     }
+
+    public String getNome(){
+        return this.nome;
+    }
 }

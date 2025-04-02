@@ -7,4 +7,8 @@ public class Quarto {
         this.numero = numero;
         this.hotel = hotel;
     }
+    
+    public int getNumero(){
+        return this.numero;
+    }
 }

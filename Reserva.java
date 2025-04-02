@@ -28,6 +28,8 @@ public class Reserva {
         if((!hospedes.contains(hospede)) && ativa){
             hospedes.add(hospede);
             hospede.addReserva(this);
+        }else{
+            System.out.println("Hospede não encontrado ou reserva cancelada!");
         }
     }
 
@@ -56,5 +58,9 @@ public class Reserva {
         }else{
             System.out.println("A reserva já possui um veículo.");
         }
+    }
+
+    public List<Hospede> getHospedes(){
+        return this.hospedes;
     }
 }
